@@ -35,8 +35,20 @@
       }
     }
     .github {
-      margin: 0 auto;
-      width: 30%;
+      // margin: 0 auto;
+      width: 70px;
+      padding-right: 10px;
+      @media @phone {
+        width: 100px;
+        // justify-content: left;
+      }
+    }
+    .linkedin {
+      width: 60px;
+      @media @phone {
+        width: 90px;
+        justify-content: left;
+      }
     }
     .info {
       padding: 20px;
@@ -77,6 +89,13 @@
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
+      }
+      .icons {
+        display: flex;
+        @media @phone {
+          margin: 0 25px;
+          justify-content: space-between;
+        }
       }
     }
   }
